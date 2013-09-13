@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+  <link rel="stylesheet" href="{% static "html5/css/normalize.css" %}">
+  <link rel="stylesheet" href="{% static "html5/css/main.css" %}">
+  <script src="{% static "html5/js/vendor/modernizr-2.6.2.min.js" %}"></script>
+
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+
+  <style type="text/css">
+    body {
+      padding-top: 50px;
+    }
+    .center{
+      text-align: center;
+    }
+  </style>
+
+  {% block additional_styles %}
+  {% endblock %}
+
+</head>
+
+<body>
+
+  {% block navbar %}
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar">Home</span>
+          <span class="icon-bar">About</span>
+          <span class="icon-bar">Contact</span>
+        </button>
+        <a class="navbar-brand" href="#">inCiTE</a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+        
+  {% endblock %}       
+
+  <div class="container">
+    {% block content %}
+
+      <div class="center">
+        <h1>inCiTE ver 1.9</h1>
+        <p class="lead">This site is under construction now for version 2.0<br> -K Park-</p>
+      </div>
+    {% endblock %}
+  </div>
+
+
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="{% static "html5/js/vendor/jquery-1.9.1.min.js" %}"><\/script>')</script>
+  <script src="{% static "html5/js/plugins.js" %}"></script>
+  <script src="{% static "html5/js/main.js" %}"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src='//www.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+
+  {% block additional_scripts %}
+  {% endblock %}
+
+</body>
+
+</html>

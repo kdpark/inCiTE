@@ -60,16 +60,6 @@ ROOT_URLCONF = 'inCiTE.urls'
 WSGI_APPLICATION = 'inCiTE.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/dev/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
-
 # Internationalization
 # https://docs.djangoproject.com/en/dev/topics/i18n/
 
@@ -97,7 +87,7 @@ STATICFILES_DIRS = (
 
 # keep this at the bottom
 try:
-  from optme.settings_local import *
+  from inCiTE.settings_local import *
   print "Imported local settings"
 except Exception as e:
   print e

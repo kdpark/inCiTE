@@ -19,3 +19,11 @@ def about(request):
 def contact(request):
   data={}
   return render_to_response("core/contact.html", data, context_instance=RequestContext(request)) 
+
+def member(request):
+  data={}
+  return render_to_response("core/member.html", data, context_instance=RequestContext(request)) 
+
+def relation(request):
+  data={}
+  return render_to_response("core/relationship.html", data, context_instance=RequestContext(request)) 

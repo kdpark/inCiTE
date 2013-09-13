@@ -5,8 +5,6 @@
 <title>inCiTE</title>
 {% endblock %}
 
-{% block headscript %}
-{% endblock %}
 
 {% block navbar %}
   <div class="navbar navbar-inverse navbar-fixed-top">
@@ -23,6 +21,7 @@
         <ul class="nav navbar-nav">
           <li><a href="/">Home</a></li>
           <li class="active"><a href="{% url 'about' %}">About</a></li>
+          <li><a href="{% url 'member' %}">Member</a></li>
           <li><a href="{% url 'contact' %}">Contact</a></li>
         </ul>
       </div><!--/.nav-collapse -->

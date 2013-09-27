@@ -2,8 +2,9 @@
 {% load staticfiles %}
 
 {% block title %}
-<title>inCiTE</title>
+<title>Idea</title>
 {% endblock %}
+
 
 
 {% block navbar %}
@@ -22,9 +23,9 @@
           <li><a href="/">Home</a></li>
           <li><a href="{% url 'about' %}">About</a></li>
           <li><a href="{% url 'member' %}">Member</a></li>
-          <li><a href="{% url 'idea' %}">Idea</a></li>
+          <li class="active"><a href="{% url 'idea' %}">Idea</a></li>
           <li><a href="{% url 'board' %}">Board</a></li>
-          <li class="active"><a href="{% url 'contact' %}">Contact</a></li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
@@ -33,10 +34,7 @@
   {% endblock %}   
 
 {% block content %}
-
-<div class="center">
-
-  <!-- under construction alert -->
+<!-- under construction alert -->
   <br>
   <div class="row">
     <div class="col-sm-3">
@@ -47,18 +45,13 @@
         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
         <strong>Sorry!</strong> This site is under construction now for new version.
       </div>
+      <p>
+        Idea sharing system !
+      </p>
     </div>
     <div class="col-sm-3">
     </div>
   </div>
-
-  <h1>Contact</h1>
-  <img src = "{% static 'img/me.jpg' %}" width="300" height="200" class="img-thumbnail">
-  <p class="lead">Feel free to contact admin.<br><br>
-    <span class="glyphicon glyphicon-envelope"></span> :  kdpark@postech<br>
-    <span class="glyphicon glyphicon-earphone"></span> : +82-10-8972-xxxx</p>
-
-
-</div>
+<br>
 
 {% endblock %}

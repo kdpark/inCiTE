@@ -31,3 +31,11 @@ def relation(request):
 def calendar(request):
   data={}
   return render_to_response("core/calendar.html", data, context_instance=RequestContext(request)) 
+
+def idea(request):
+  data={}
+  return render_to_response("core/idea.html", data, context_instance=RequestContext(request)) 
+
+def board(request):
+  data={}
+  return render_to_response("core/board.html", data, context_instance=RequestContext(request)) 

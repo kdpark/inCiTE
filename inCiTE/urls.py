@@ -14,6 +14,8 @@ urlpatterns = patterns('',
     url(r'^calendar/$', 'core.views.calendar', name='calendar'),
     url(r'^idea/$', 'core.views.idea', name='idea'),
     url(r'^board/$', 'core.views.board', name='board'),
+    url(r'^test1/$', 'core.views.test1', name='test1'),
+    url(r'^test2/$', 'core.views.test2', name='test2'),
 
 
     url(r'^admin/', include(admin.site.urls)),

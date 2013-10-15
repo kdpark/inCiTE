@@ -39,3 +39,11 @@ def idea(request):
 def board(request):
   data={}
   return render_to_response("core/board.html", data, context_instance=RequestContext(request)) 
+
+def test1(request):
+  data={}
+  return render_to_response("core/test1.html", data, context_instance=RequestContext(request)) 
+
+def test2(request):
+  data={}
+  return render_to_response("core/test2.html", data, context_instance=RequestContext(request)) 

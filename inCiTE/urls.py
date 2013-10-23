@@ -16,6 +16,9 @@ urlpatterns = patterns('',
     url(r'^board/$', 'core.views.board', name='board'),
     url(r'^test1/$', 'core.views.test1', name='test1'),
     url(r'^test2/$', 'core.views.test2', name='test2'),
+    url(r'^start1/$', 'core.views.start1', name='start1'),
+    url(r'^start2/$', 'core.views.start2', name='start2'),
+    url(r'^clicklike/(?P<uid>\d+)/(?P<lid>\d+)$', 'core.views.clicklike', name='clicklike'),
 
 
     url(r'^admin/', include(admin.site.urls)),

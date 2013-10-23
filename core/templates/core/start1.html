@@ -1,0 +1,45 @@
+{% extends "core/base.html" %}
+{% load staticfiles %}
+
+{% block title %}
+<title>Idea</title>
+{% endblock %}
+
+
+
+{% block navbar %}
+  
+        
+  {% endblock %}   
+
+{% block content %}
+<!-- under construction alert -->
+  <br>
+  <div class="row">
+    <div class="col-sm-2">
+    </div>
+    <div class="col-sm-8">
+      <h2>안녕하세요</h2>
+      <p>
+        먼저 실험에 참가해주신 참가자분들께 감사의 뜻을 전합니다.<br>
+        이 페이지는 포항공과대학교 창의IT융합공학과 2013년 가을학기 HCI 실험페이지입니다.<br>
+        <br>
+        평소 페이스북을 하듯이 게시물을 감상하시고, '좋아요' 버튼을 클릭하실 수 있습니다.<br>
+        편한 마음으로 실험에 임해주세요.<br><br>
+
+        준비가 완료되었으면, 실험 지시자에게 부여받은 ID(숫자)를 쓰고 접속하세요.
+      </p>
+      <form action="/test1/" method="post">
+        {% csrf_token %}
+        <input type="text" name="pid">
+        <input type="submit" value="접속">
+      </form>
+
+
+    </div>
+    <div class="col-sm-2">
+    </div>
+  </div>
+<br>
+
+{% endblock %}

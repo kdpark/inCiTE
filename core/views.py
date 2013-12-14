@@ -41,6 +41,13 @@ def board(request):
   data={}
   return render_to_response("core/board.html", data, context_instance=RequestContext(request)) 
 
+
+def newseek(request):
+  data={}
+  return render_to_response("core/newseek.html", data, context_instance=RequestContext(request))
+
+
+
 def test1(request):
 
   p = Participant(name= request.POST['pid'], extype=1)

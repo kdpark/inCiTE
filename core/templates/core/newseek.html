@@ -1,0 +1,81 @@
+{% extends "core/base.html" %}
+{% load staticfiles %}
+
+{% block title %}
+<title>Newseek</title>
+{% endblock %}
+
+
+
+{% block navbar %}
+  
+        
+  {% endblock %}   
+
+{% block content %}
+<!-- under construction alert -->
+  <br>
+  <div class="row">
+    <div class="col-sm-2">
+    </div>
+    <div class="col-sm-8">
+      <h2>문제 Type 1</h2><br>
+      <p>
+        2013. 12. 10. (머니투데이) 영국 KEF사의 LS50 스피커가 세계적인 권위를 인정받고 있는 미국 오디오월간지 스테레오파일이 선정한 '올해의 오디오'로 꼽혔다.
+<br><br>
+스테레오파일 12월호에 따르면 지난 2012년말 KEF 50주년을 맞아 출시된 북쉘프 스피커 LS50이 '올해의 제품'(Products of the Year) 리스트에서 영예의 대상격인 '올해의 오디오'(Overall Product of 2013)로 꼽혔다. 스테레오파일은 지난 1992년부터 전세계 오디오 기기를 대상으로 '올해의 제품'을 선정해왔다. 
+<br><br>
+올해에는 총 7개 부문에 걸쳐 쟁쟁한 오디오기기들이 이름을 올렸다. 스피커 부문에서는 윌슨 오디오의 2억원짜리 초대형 스피커 알렉산드리아 KLF, YG어쿠스틱의 1억1000만원짜리 Sonja 1.3이 공동 수상했다. 입상작품으로는 KEF의 LS50, B&W의 804다이아몬드, 소니의 SS-NA2ES, TAD의 Evolution One 등이 꼽혔다. 
+<br><br>
+'가성비'(가격대성능비)를 고려한 예산부문(Budget Component)에서는 KEF의 LS50(1499달러)이 한국 아스텔앤컨의 포터블미디어플레이어 AK100, B&W의 P3, 피치트리의 인티앰프 데코65 등을 제치고 수상했다. 이로써 LS50은 '종합대상'격인 '올해의 오디오'와 함께 예산부문상까지 2관왕에 오르는 영광을 안았다. 
+<br><br>
+KEF LS50은 KEF사의 동축유닛(트위터+중저역 드라이버)인 유니큐(Uni-Q)드라이버를 장착한 2웨이 모니터 스피커로, <font color='red'>ㅁㅁㅁㅁ</font>는 8옴, 음압레벨은 85dB이다. 재생주파수 대역은 -6dB에서 47Hz~45kHz, ±3dB에서 79Hz~28KHz이다.</p><br>
+        <br>
+        <br>
+
+        1. 교류회로에서 전류가 흐르기 어려운 정도를 나타내며, 음향장치에서 이를 높이면 화이트 노이즈를 잡아주는 음질적 장점이 있다. 하지만 이것이 높으면 음량 확보가 어렵다.
+
+
+      </p>
+      <form action="/test1/" method="post">
+        {% csrf_token %}
+        <input type="radio" id="id1" name="pid" />&nbsp;&nbsp;리액턴스 (Reactance)<br>
+        <input type="radio" id="id2" name="접속" />&nbsp;&nbsp;임피던스 (Impedence)<br>
+        <input type="radio" id="id2" name="접속" />&nbsp;&nbsp;인덕턴스 (Inductance)<br>
+        <input type="radio" id="id2" name="접속" />&nbsp;&nbsp;컨덕턴스 (Conductance)<br>
+      </form>
+
+      <br><br><br><br>
+
+      <h2>문제 Type 2</h2><br>
+      <p>
+        2013. 11. 27 (tv리포트) 인기 온라인 게임 리그오브레전드(롤) 패치가 27일 오후3시30분께 부터 <font color='red'>QA</font>진행 중인 것으로 나타났다.
+<br><br>
+
+이날 리그오브레전드(롤) 공식 홈페이지에 올라온 공지사항에 따르면 "금일 13:00까지 진행될 예정이던 게임 업데이트 작업을 17:00까지 연장하게 되었습니다"라는 글과 함께 점검 현황을 알렸다. 현재 모든 점검 상황에 오류를 확인하는 QA단계인 것으로 알려졌다.
+<br><br>
+
+특히 지난 북미 롤 서버에 공개된 3.14 패치버전이 이번에 적용될 것으로 보인다. 롤 유저들은 이번 점검이후로 3.14패치부터 등장하는 '팝스타 아리'와 '지옥의 나서스'에 기대감을 드러내고 있다.
+        <br>
+        <br>
+
+        1. QA에 대한 설명으로 옳은 것은?
+
+
+      </p>
+      <form action="/test1/" method="post">
+        {% csrf_token %}
+        <input type="radio" id="id1" name="pid" />&nbsp;&nbsp;Question and Answer: 실제 사용자와 질의 응답을 통해 제품의 품질을 확보하는 것<br>
+        <input type="radio" id="id2" name="접속" />&nbsp;&nbsp;Quantitative Analysis: 제품의 모든 오류 사항들을 정량적으로 분석하는 것<br>
+        <input type="radio" id="id2" name="접속" />&nbsp;&nbsp;Quality Assurance: 제품의 품질이 일정 수준에 있음을 보증하는 것<br>
+        <input type="radio" id="id2" name="접속" />&nbsp;&nbsp;Qualified Agreement: 제품의 현재 상태 보고서에 대해 최종 의사결정권자의 동의를 얻는 것<br>
+      </form>
+      
+
+    </div>
+    <div class="col-sm-2">
+    </div>
+  </div>
+<br>
+
+{% endblock %}

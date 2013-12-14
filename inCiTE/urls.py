@@ -19,7 +19,7 @@ urlpatterns = patterns('',
     url(r'^start1/$', 'core.views.start1', name='start1'),
     url(r'^start2/$', 'core.views.start2', name='start2'),
     url(r'^clicklike/(?P<uid>\d+)/(?P<lid>\d+)$', 'core.views.clicklike', name='clicklike'),
-
+    url(r'^newseek/$', 'core.views.newseek', name='newseek'),
 
     url(r'^admin/', include(admin.site.urls)),
 )
